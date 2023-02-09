@@ -6,7 +6,7 @@
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 17:05:27 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/08 00:37:28 by namorgha         ###   ########.fr       */
+/*   Updated: 2023/02/09 16:46:56 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void	check_input(t_stacks *st, int fd)
 		ptr = get_next_line(fd);
 	}
 	if (all_sorted(st) && st->b->top == 0)
-		write("OK\n");
+		write(1, "OK\n", 3);
 	else
-		write("KO\n");
+		write(1,"KO\n", 3);
 }

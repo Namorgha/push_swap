@@ -6,7 +6,7 @@
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 10:22:27 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/07 17:34:54 by namorgha         ###   ########.fr       */
+/*   Updated: 2023/02/12 23:46:59 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,13 @@ void	sorting_all(t_stacks *st)
 
 void	end(t_stacks *st)
 {
-	if (st->a->top == 5)
+	if (st->a->top == 2)
+	{
+		duplicate(st);
+		is_sorted(st);
+		sort_2(st);
+	}
+	else if (st->a->top == 5)
 	{
 		duplicate(st);
 		is_sorted(st);

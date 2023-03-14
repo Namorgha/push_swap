@@ -6,7 +6,7 @@
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/22 00:57:06 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/08 00:39:13 by namorgha         ###   ########.fr       */
+/*   Updated: 2023/02/13 00:06:37 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,15 +53,3 @@ void	fill_stack(t_stack *stack, int argc, char **argv)
 	argc = ft_strcount(argv);
 	fill(stack, argc, argv);
 }
-
-// void	print_stack(t_stack *a)
-// {
-// 	int	i;
-
-// 	i = a->top - 1;
-// 	while (i >= 0)
-// 	{
-// 		write("||\t%i\t||\n", a->arr[i]);
-// 		i--;
-// 	}
-// }

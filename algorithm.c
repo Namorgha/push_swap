@@ -6,7 +6,7 @@
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/26 08:41:23 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/04 10:22:47 by namorgha         ###   ########.fr       */
+/*   Updated: 2023/02/12 22:00:23 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	hell(t_stacks *st)
 {
-	return (st->a->top * 0.0375 + 11.25);
+	if (st->a->top == 500)
+		return (30);
+	else
+		return (15);
 }
 
 int	*cpy(t_stacks *st, int *y)

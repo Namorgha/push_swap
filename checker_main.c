@@ -6,7 +6,7 @@
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/30 00:07:08 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/08 00:20:51 by namorgha         ###   ########.fr       */
+/*   Updated: 2023/02/12 23:32:48 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,7 @@ void	start_stuff(t_stacks *stacks, int argc, char **argv)
 	free(stacks);
 	while (str[fr])
 		free(str[fr++]);
+	free(str);
 }
 
 void	error(int fr, int argc, char **argv)

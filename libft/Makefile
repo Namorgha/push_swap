@@ -6,7 +6,7 @@
 #    By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 17:41:03 by namorgha          #+#    #+#              #
-#    Updated: 2023/02/08 00:35:23 by namorgha         ###   ########.fr        #
+#    Updated: 2023/02/13 00:05:01 by namorgha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,7 +94,7 @@ $(NAME): $(OBJ)
 	@ar -r $(NAME) $(OBJ)
 
 $(OBJ): $(SRC)
-	@gcc -Wall -Wextra -Werror -c $(SRC)
+	gcc -Wall -Wextra -Werror -c $(SRC)
 
 clean:
 	@rm -f *.o

@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ra_rb.c                                            :+:      :+:    :+:   */
+/*   sort_2.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: namorgha <namorgha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/22 01:56:13 by namorgha          #+#    #+#             */
-/*   Updated: 2023/02/12 22:12:12 by namorgha         ###   ########.fr       */
+/*   Created: 2023/02/12 23:34:16 by namorgha          #+#    #+#             */
+/*   Updated: 2023/02/12 23:42:01 by namorgha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ra(t_stack *st, int i)
+void	sort_2(t_stacks *st)
 {
-	rotate(st);
-	if (i == 1)
-		write(1, "ra\n", 3);
-}
-
-void	rb(t_stack *st, int i)
-{
-	rotate(st);
-	if (i == 1)
-		write(1, "rb\n", 3);
-}
-
-void	rr(t_stacks *st, int i)
-{
-	ra(st->a, i);
-	rb(st->b, i);
+	if (st->a->arr[st->a->top - 1] > st->a->arr[st->a->top - 2])
+		ra(st->a, 1);
 }
